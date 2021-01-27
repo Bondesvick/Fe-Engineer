@@ -72,8 +72,8 @@ export default function ListComponent({Name, State, Address, Issues, Enteries, R
                                     width: "120px",
                                     height: "22px",
                                     textAlign: "center",
-                                    marginLeft: "5px",}}>
-                                <small style={{fontWeight: "bold", alignSelf: "center"}}>{Issues} Issues found</small>
+                                    marginLeft: "5px"}}>
+                                <small style={{fontWeight: "bold", fontSize: "14px", alignSelf: "center"}}>{Issues} Issues found</small>
                             </div>
                         ) : (
                             <div style={{color: "#8C70FF",

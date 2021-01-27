@@ -1,7 +1,6 @@
 import React from 'react'
 import Header from './../Components/Header'
 import styled from "styled-components"
-import { FcInfo } from "react-icons/fc";
 import Stats from "./../Components/Stats"
 import Summary from "./../Components/Summary"
 import ListArea from "./../Components/ListArea"
