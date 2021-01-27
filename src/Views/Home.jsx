@@ -3,6 +3,7 @@ import Header from './../Components/Header'
 import styled from "styled-components"
 import { FcInfo } from "react-icons/fc";
 import { FiInfo } from "react-icons/fi";
+import Stats from "./../Components/Stats"
 
 const MainBody = styled.div`
         height: 300px;
@@ -36,38 +37,11 @@ const Content =  styled.div`
         width: 100%;
         padding: 3px;
         justify-items: center;
+        column-gap: 5px;
 
-        .grid-item{
-            background-color: #fff;
-            width: 256px;
-            height: 129px;
-            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-            border-radius: 6px;
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            justify-content: space-around;
-            padding-left: 16px;
 
-            .num{
-                position: absolute;
-                top: 5px;
-            }
-
-            .txt{
-                position: absolute;
-                top: 60px;
-                color: #9696A0;
-                font-weight: bold;
-            }
-
-            .ico{
-                position: absolute;
-                right: 16.57px;
-                color: #9696A0;
-                height: 22.86px;
-                width: 22.86px;
-            }
+        .ear{
+            
         }
     }
 `
@@ -87,25 +61,17 @@ export default function Home() {
                 
 
             <div className="girdarea">
-                <div className="grid-item">
-                    <h1 className="num">31454</h1>
-                    <p className="txt">Ongoing metric</p>
-                    <FiInfo className="ico"/>
-                </div>
+               
+                <Stats num="31454" val="Ongoing metric"/>
 
-                <div className="grid-item">
-                    hello
-                </div>
-                <div className="grid-item">
-                    hello
-                </div>
+                <Stats num="2344" val="Past metric"/>
 
-                <div className="grid-item">
-                    hello
-                </div>
-                <div className="grid-item">
-                    hello
-                </div>
+                <Stats num="14224" val="Missed metric"/>
+
+                <Stats num="635" val="Failed metric"/>
+
+                <Stats num="11334" val="Pending metric"/>
+                
             </div>
             </Content>
             
