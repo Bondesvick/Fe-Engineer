@@ -4,7 +4,7 @@ import { FiInfo } from "react-icons/fi";
 
 const Main = styled.div`
             background-color: #fff;
-            width: 256px;
+            /* width: 258px; */
             height: 129px;
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
             border-radius: 6px;
