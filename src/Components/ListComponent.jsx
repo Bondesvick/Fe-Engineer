@@ -103,12 +103,12 @@ export default function ListComponent({Name, State, Address, Issues, Enteries, R
                                 alignItems: "center"
                             }}>
 
-                                <div style={{height:"6px",
-                                                width:"6px",
-                                                backgroundColor:"#000",
-                                                borderRadius:"50%",
-                                                display: "inline",
-                                                marginRight: "4px"}}>
+                                <div style={{height:"7px",
+                                            width:"7px",
+                                            backgroundColor:"#000",
+                                            borderRadius:"50%",
+                                            // display: "inline",
+                                            marginRight: "4px"}}>
                                 </div>
 
                                 <p style={{

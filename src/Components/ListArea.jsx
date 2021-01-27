@@ -54,7 +54,6 @@ const HeadItem = styled.div`
 
 
 export default function ListArea() {
-    console.log(data)
     return (
         <Main>
             <Top>
@@ -90,7 +89,6 @@ export default function ListArea() {
             <Content>
             {
                 data.map((val) => {
-                    console.log(val)
                     return(
                         <ListComponent key={val.id} Name={val.name} State={val.state} Address={val.address} Issues={val.issues} Enteries={val.enteries} Risk={val.risk}/>
                     )
