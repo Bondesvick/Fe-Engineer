@@ -99,23 +99,23 @@ const RightArea = styled.div`
 export default function Header() {
     return (
         <Main>
-        <img src="./logo.png" alt="Logo"/>
+        <img src="./Images/logo.png" alt="Logo"/>
         <h4 className="title">FE Engineer Test 1</h4>
 
         <LinkArea>
 
             <NavLink className="aLink" to="/home" activeClassName="activeLink">
-                    <img className="ico" src="./Home.png" alt="home"/>
+                    <img className="ico" src="./Images/Home.png" alt="home"/>
                     <h5 className="txt">Home</h5>
             </NavLink>
 
             <NavLink className="aLink" to="/enteries" activeClassName="activeLink">
-                    <img className="ico" src="./Entries.png" alt="home"/>
+                    <img className="ico" src="./Images/Entries.png" alt="home"/>
                     <h5 className="txt">Enteries</h5>
             </NavLink>
 
             <NavLink className="aLink" to="/" exact activeClassName="activeLink">
-                    <img className="ico" src="./Divisions.png" alt="home"/>
+                    <img className="ico" src="./Images/Divisions.png" alt="home"/>
                     <h5 className="txt">Divisions</h5>
             </NavLink>
             
@@ -124,12 +124,12 @@ export default function Header() {
         <RightArea>
         <FaSistrix/>
             <input className="srch-bx" type="search"/>
-            <img className="bell" src="./Bell.png" alt="Bell"/>
+            <img className="bell" src="./Images/Bell.png" alt="Bell"/>
             <div className="prof-circle">
-                <img src="./Avatar.png" alt="Bell"/>
+                <img src="./Images/Avatar.png" alt="Bell"/>
             </div>
            
-            <img src="./Arrow.png" alt="Bell"/>
+            <img src="./Images/Arrow.png" alt="Bell"/>
         </RightArea>
         
         </Main>

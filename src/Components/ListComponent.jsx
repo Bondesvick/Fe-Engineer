@@ -31,7 +31,7 @@ export default function ListComponent({Name, State, Address, Issues, Enteries, R
         <ListItem>
                     <HeadItem style={{flex: "1 1"}}>
                     <input className="chkbx" type="checkbox"/>
-                    <img style={{marginLeft: "15px"}} src="./BlueDown.png" alt="arrow down"/>
+                    <img style={{marginLeft: "15px"}} src="./Images/BlueDown.png" alt="arrow down"/>
                     </HeadItem>
 
                     <HeadItem>
@@ -130,7 +130,7 @@ export default function ListComponent({Name, State, Address, Issues, Enteries, R
                     <RiskWidget Risk={Risk}/>
 
                     <HeadItem style={{flex: "1 1"}}>
-                        <img src="./menu.png" alt="arrow down"/>
+                        <img src="./Images/menu.png" alt="arrow down"/>
                     </HeadItem>
                 </ListItem>
     )
