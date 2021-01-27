@@ -1,11 +1,10 @@
 import React from 'react'
 import Header from './../Components/Header'
 import styled from "styled-components"
-import { FcInfo } from "react-icons/fc";
 import Stats from "./../Components/Stats"
 import Summary from "./../Components/Summary"
 import ListArea from "./../Components/ListArea"
-import History from "./../Components/History"
+import History from "../Components/History/History"
 
 const MainBody = styled.div`
         background-color: #EDF6FF;
@@ -22,11 +21,12 @@ const Content =  styled.div`
     background-color: #fff;
 
     .flag{
-        height: 45px;
+        height: 50px;
         width: 100%;
         display: flex;
         align-items: center;
         padding-left: 33px;
+        color: #778699;
     }
 
     .gridarea{
@@ -52,11 +52,10 @@ export default function Home() {
             <Content>
 
                 <div className="flag">
-                    Hello
-                    <FcInfo/>
-                    
+                    <p>Divisions</p>
+                    <img src="./Images/Path.png" alt="flag-ico" style={{margin: "4px 6px 0px 6px"}}/>
+                    <p>Module</p>
                 </div>
-                    
 
                 <div className="gridarea">
                 
