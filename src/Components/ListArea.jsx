@@ -1,9 +1,9 @@
 /* eslint-disable */
 import React from 'react'
 import styled from "styled-components"
-import { FiArrowRight } from "react-icons/fi";
-import { FiArrowUp } from "react-icons/fi";
-import { FiArrowDownRight } from "react-icons/fi";
+import ListComponent from "./ListComponent"
+import {data} from "./Data"
+
 
 const Main = styled.div`
     background-color: #fff;
@@ -44,21 +44,6 @@ const Content = styled.div`
     height: 100%;
 `
 
-const ListItem = styled.div`
-    height: 60px;
-    width: 100%;
-    border-bottom: 1px solid #DCE1E7;
-    display: flex;
-    align-items: center;
-
-    .chkbx{
-        height: 15px;
-        width: 15px;
-        border: 5px solid #9F9F9F;
-        margin-left: 20.5px;
-    }
-`
-
 const HeadItem = styled.div`
     flex: 2 2;
     p{
@@ -69,6 +54,7 @@ const HeadItem = styled.div`
 
 
 export default function ListArea() {
+    console.log(data)
     return (
         <Main>
             <Top>
@@ -96,55 +82,20 @@ export default function ListArea() {
                     <p>RISK PROFILE</p>
                 </HeadItem>
 
+                <HeadItem style={{flex: "1 1"}}>
+                
+                </HeadItem>
+
             </Top>
             <Content>
-                <ListItem>
-                    <HeadItem style={{flex: "1 1"}}>
-                    <input className="chkbx" type="checkbox"/>
-                    <img style={{marginLeft: "15px"}} src="./BlueDown.png" alt="arrow down"/>
-                    </HeadItem>
-
-                    <HeadItem>
-                        <p>Courtney Henry</p>
-                    </HeadItem>
-
-                    <HeadItem>
-                        <div>
-                            <p>Courtney Henry</p>
-                            <p>Courtney Henry</p>
-                        </div>
-                        
-                    </HeadItem>
-
-                    <HeadItem>
-                        <div style={{color: "#8C70FF",
-                                     display: "flex",
-                                    alignItems: 'center',
-                                    justifyContent: "center",
-                                    backgroundColor: "#F6F3FF", 
-                                    borderRadius: "11px", 
-                                    padding: "1px 10px", 
-                                    display: "inline", textAlign: "center"}}>
-                            <small style={{fontWeight: "bold", alignSelf: "center"}}>No Issues</small>
-                        </div>
-                    </HeadItem>
-
-                    <HeadItem>
-                        <div>
-                            <p>Courtney Henry</p>
-                            <p>Courtney Henry</p>
-                        </div>
-                    </HeadItem>
-
-                    <HeadItem>
-                    <div>
-                        <FiArrowDownRight/>
-                        <p>Courtney Henry</p>
-                    </div>
-                        
-                    </HeadItem>
-                </ListItem>
-                
+            {
+                data.map((val) => {
+                    console.log(val)
+                    return(
+                        <ListComponent key={val.id} Name={val.name} State={val.state} Address={val.address} Issues={val.issues} Enteries={val.enteries} Risk={val.risk}/>
+                    )
+                })
+            }
             </Content>
             
             

@@ -24,7 +24,7 @@ export const data = [
         name: "Cody Fisher",
         state: "Lagos state",
         address: "3605 Parker Rd.",
-        issues: 0,
+        issues: 1,
         enteries: 8,
         risk: "mid"
     },
@@ -34,7 +34,7 @@ export const data = [
         state: "Lagos state",
         address: "3605 Parker Rd.",
         issues: 0,
-        enteries: 8,
+        enteries: 79,
         risk: "high"
     },
     {
@@ -42,8 +42,8 @@ export const data = [
         name: "Cody Fisher",
         state: "Lagos state",
         address: "3605 Parker Rd.",
-        issues: 0,
-        enteries: 8,
+        issues: 5,
+        enteries: 3,
         risk: "mid"
     },
     {
@@ -51,7 +51,7 @@ export const data = [
         name: "Cody Fisher",
         state: "Lagos state",
         address: "3605 Parker Rd.",
-        issues: 0,
+        issues: 2,
         enteries: 8,
         risk: "mid"
     },
@@ -61,8 +61,8 @@ export const data = [
         state: "Lagos state",
         address: "3605 Parker Rd.",
         issues: 0,
-        enteries: 8,
-        risk: "mid"
+        enteries: 0,
+        risk: "high"
     },
     {
         id: 8,
@@ -70,7 +70,7 @@ export const data = [
         state: "Lagos state",
         address: "3605 Parker Rd.",
         issues: 0,
-        enteries: 8,
+        enteries: 2,
         risk: "mid"
     },
     {
@@ -78,26 +78,26 @@ export const data = [
         name: "Cody Fisher",
         state: "Lagos state",
         address: "3605 Parker Rd.",
-        issues: 0,
+        issues: 2,
         enteries: 8,
-        risk: "mid"
+        risk: "low"
     },
     {
         id: 10,
         name: "Cody Fisher",
         state: "Lagos state",
         address: "3605 Parker Rd.",
-        issues: 0,
-        enteries: 8,
-        risk: "mid"
+        issues: 5,
+        enteries: 10,
+        risk: "high"
     },
     {
         id: 11,
         name: "Cody Fisher",
         state: "Lagos state",
         address: "3605 Parker Rd.",
-        issues: 0,
-        enteries: 8,
+        issues: 4,
+        enteries: 1,
         risk: "mid"
     },
     {
@@ -105,8 +105,8 @@ export const data = [
         name: "Cody Fisher",
         state: "Lagos state",
         address: "3605 Parker Rd.",
-        issues: 0,
-        enteries: 8,
+        issues: 1,
+        enteries: 4,
         risk: "mid"
     },
     {
@@ -116,16 +116,16 @@ export const data = [
         address: "3605 Parker Rd.",
         issues: 0,
         enteries: 8,
-        risk: "mid"
+        risk: "high"
     },
     {
         id: 14,
         name: "Cody Fisher",
         state: "Lagos state",
         address: "3605 Parker Rd.",
-        issues: 0,
-        enteries: 8,
-        risk: "mid"
+        issues: 2,
+        enteries: 3,
+        risk: "low"
     },
     {
         id: 15,
@@ -133,7 +133,7 @@ export const data = [
         state: "Lagos state",
         address: "3605 Parker Rd.",
         issues: 0,
-        enteries: 8,
+        enteries: 1,
         risk: "mid"
     }
 ]

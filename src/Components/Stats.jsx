@@ -29,6 +29,7 @@ const Main = styled.div`
             .ico{
                 position: absolute;
                 right: 16.57px;
+                top: 35px;
                 color: #9696A0;
                 height: 22.86px;
                 width: 22.86px;
