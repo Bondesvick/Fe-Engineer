@@ -37,50 +37,10 @@ const Content =  styled.div`
         grid-template-rows: auto;
         height: 90px;
         width: 100%;
-        ${'' /* grid-column-gap: 5px; */}
-        ${'' /* align-items: center; */}
-        ${'' /* grid-row-gap: 5px; */}
         grid-gap: 25px;
         padding: 15px;
 
-        .ear{
-            background-color: #fff;
-            width: 258px;
-            height: 258px;
-            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-            border-radius: 6px;
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            justify-content: space-around;
-            padding-left: 16px;
-        }
-
-        .ear2{
-            background-color: #fff;
-            width: 100%;
-            height: 100%;
-            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-            border-radius: 0 0 6px 6px;
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            justify-content: space-around;
         
-        }
-
-        .ear3{
-            background-color: #fff;
-            width: 258px;
-            height: 258px;
-            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-            border-radius: 6px;
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            justify-content: space-around;
-            padding-left: 16px;
-        }
     }
 `
 
