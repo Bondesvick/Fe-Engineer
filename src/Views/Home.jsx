@@ -13,7 +13,7 @@ const MainBody = styled.div`
         align-items: center;
         justify-content: flex-start;
         flex-direction: column;
-        height: 100%;
+        height: 100vh;
 `
 
 const Content =  styled.div`
