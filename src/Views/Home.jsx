@@ -22,11 +22,12 @@ const Content =  styled.div`
     background-color: #fff;
 
     .flag{
-        height: 45px;
+        height: 50px;
         width: 100%;
         display: flex;
         align-items: center;
         padding-left: 33px;
+        color: #778699;
     }
 
     .gridarea{
@@ -52,11 +53,10 @@ export default function Home() {
             <Content>
 
                 <div className="flag">
-                    Hello
-                    <FcInfo/>
-                    
+                    <p>Divisions</p>
+                    <img src="./Images/Path.png" alt="flag-ico" style={{margin: "4px 6px 0px 6px"}}/>
+                    <p>Module</p>
                 </div>
-                    
 
                 <div className="gridarea">
                 

@@ -30,9 +30,9 @@ export const data = [
     },
     {
         id: 4,
-        name: "Cody Fisher",
+        name: "Bessie Cooper",
         state: "Lagos state",
-        address: "3605 Parker Rd.",
+        address: "775 Rolling Green Rd.",
         issues: 0,
         enteries: 79,
         risk: "high"
@@ -41,34 +41,34 @@ export const data = [
         id: 5,
         name: "Cody Fisher",
         state: "Lagos state",
-        address: "3605 Parker Rd.",
+        address: "8080 Railroad St.",
         issues: 5,
         enteries: 3,
         risk: "mid"
     },
     {
         id: 6,
-        name: "Cody Fisher",
+        name: "Annette Black",
         state: "Lagos state",
-        address: "3605 Parker Rd.",
+        address: "8080 Railroad St.",
         issues: 2,
         enteries: 8,
         risk: "mid"
     },
     {
         id: 7,
-        name: "Cody Fisher",
+        name: "Jenny Wilson",
         state: "Lagos state",
-        address: "3605 Parker Rd.",
+        address: "3890 Poplar Dr.",
         issues: 0,
         enteries: 0,
         risk: "high"
     },
     {
         id: 8,
-        name: "Cody Fisher",
+        name: "Darlene Robertson",
         state: "Lagos state",
-        address: "3605 Parker Rd.",
+        address: "8558 Green Rd.",
         issues: 0,
         enteries: 2,
         risk: "mid"
@@ -93,7 +93,7 @@ export const data = [
     },
     {
         id: 11,
-        name: "Cody Fisher",
+        name: "Ralph Edwards",
         state: "Lagos state",
         address: "3605 Parker Rd.",
         issues: 4,
@@ -111,7 +111,7 @@ export const data = [
     },
     {
         id: 13,
-        name: "Cody Fisher",
+        name: "Ralph Edwards",
         state: "Lagos state",
         address: "3605 Parker Rd.",
         issues: 0,
@@ -129,9 +129,9 @@ export const data = [
     },
     {
         id: 15,
-        name: "Cody Fisher",
+        name: "Darrell Steward",
         state: "Lagos state",
-        address: "3605 Parker Rd.",
+        address: "8558 Green Rd.",
         issues: 0,
         enteries: 1,
         risk: "mid"

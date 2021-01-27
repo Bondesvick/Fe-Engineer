@@ -44,6 +44,7 @@ export default function ListComponent({Name, State, Address, Issues, Enteries, R
                     <HeadItem>
                         <div style={{
                             position: "relative",
+                            marginLeft: "5px",
                         }}>
                             <p style={{
                                 color:"#000",
@@ -63,28 +64,30 @@ export default function ListComponent({Name, State, Address, Issues, Enteries, R
                     {
                         Issues > 0 ? (
                             <div style={{color: "#F4B400",
-                                    alignItems: 'center',
-                                    justifyContent: "center",
                                     backgroundColor: "#FFF6DE", 
                                     borderRadius: "11px", 
                                     padding: "2px 12px", 
-                                    display: "inline", 
+                                    display: "flex",
+                                    justifyContent: 'flex-start',
+                                    width: "120px",
+                                    height: "22px",
                                     textAlign: "center",
-                                    marginLeft: "5px"}}>
-                            <small style={{fontWeight: "bold", alignSelf: "center"}}>{Issues} Issues found</small>
-                        </div>
+                                    marginLeft: "5px",}}>
+                                <small style={{fontWeight: "bold", alignSelf: "center"}}>{Issues} Issues found</small>
+                            </div>
                         ) : (
                             <div style={{color: "#8C70FF",
-                                    alignItems: 'center',
-                                    justifyContent: "center",
                                     backgroundColor: "#F6F3FF", 
                                     borderRadius: "11px", 
                                     padding: "2px 12px", 
-                                    display: "inline", 
+                                    display: "flex",
+                                    justifyContent: 'flex-start',
+                                    width: "89px",
+                                    height: "22px",
                                     textAlign: "center",
                                     marginLeft: "5px"}}>
-                            <small style={{fontWeight: "bold", alignSelf: "center"}}>No Issues</small>
-                        </div>
+                                <small style={{fontWeight: "bold", fontSize: "14px"}}>No Issues</small>
+                            </div>
                         )
                     }
                         
