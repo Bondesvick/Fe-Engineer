@@ -8,7 +8,6 @@ import ListArea from "./../Components/ListArea"
 import History from "./../Components/History"
 
 const MainBody = styled.div`
-        height: 300px;
         background-color: #EDF6FF;
         display: flex;
         align-items: center;
@@ -19,18 +18,18 @@ const MainBody = styled.div`
 
 const Content =  styled.div`
     width: 1440px;;
-    min-height: 840px;
+    min-height: 800px;
     background-color: #fff;
 
     .flag{
-        height: 53px;
+        height: 45px;
         width: 100%;
         display: flex;
         align-items: center;
         padding-left: 33px;
     }
 
-    .girdarea{
+    .gridarea{
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(5, 1fr);
@@ -38,7 +37,8 @@ const Content =  styled.div`
         height: 90px;
         width: 100%;
         grid-gap: 25px;
-        padding: 15px;
+        padding: 0 15px 15px 15px;
+        padding-bottom: 15px;
 
         
     }
@@ -51,32 +51,32 @@ export default function Home() {
 
             <Content>
 
-            <div className="flag">
-                Hello
-                <FcInfo/>
+                <div className="flag">
+                    Hello
+                    <FcInfo/>
+                    
+                </div>
+                    
+
+                <div className="gridarea">
                 
-            </div>
-                
+                    <Stats style={{gridColumnStart: "1", gridColumnEnd: "2", gridRowStart: "1", gridRowEnd: "2"}} num="31454" val="Ongoing metric"/>
 
-            <div className="girdarea">
-               
-                <Stats style={{gridColumnStart: "1", gridColumnEnd: "2", gridRowStart: "1", gridRowEnd: "2"}} num="31454" val="Ongoing metric"/>
+                    <Stats style={{gridColumnStart: "2", gridColumnEnd: "3", gridRowStart: "1", gridRowEnd: "2"}} num="2344" val="Past metric"/>
 
-                <Stats style={{gridColumnStart: "2", gridColumnEnd: "3", gridRowStart: "1", gridRowEnd: "2"}} num="2344" val="Past metric"/>
+                    <Stats style={{gridColumnStart: "3", gridColumnEnd: "4", gridRowStart: "1", gridRowEnd: "2"}} num="14224" val="Missed metric"/>
 
-                <Stats style={{gridColumnStart: "3", gridColumnEnd: "4", gridRowStart: "1", gridRowEnd: "2"}} num="14224" val="Missed metric"/>
+                    <Stats style={{gridColumnStart: "4", gridColumnEnd: "5", gridRowStart: "1", gridRowEnd: "2"}} num="635" val="Failed metric"/>
 
-                <Stats style={{gridColumnStart: "4", gridColumnEnd: "5", gridRowStart: "1", gridRowEnd: "2"}} num="635" val="Failed metric"/>
+                    <Stats style={{gridColumnStart: "5", gridColumnEnd: "6", gridRowStart: "1", gridRowEnd: "2"}} num="11334" val="Pending metric"/>
 
-                <Stats style={{gridColumnStart: "5", gridColumnEnd: "6", gridRowStart: "1", gridRowEnd: "2"}} num="11334" val="Pending metric"/>
+                    <Summary />
 
-                <Summary />
+                    <ListArea/>
 
-                <ListArea/>
-
-                <History/>
-                
-            </div>
+                    <History/>
+                    
+                </div>
             </Content>
             
         </MainBody>
