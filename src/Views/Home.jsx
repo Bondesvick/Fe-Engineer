@@ -5,7 +5,7 @@ import { FcInfo } from "react-icons/fc";
 import Stats from "./../Components/Stats"
 import Summary from "./../Components/Summary"
 import ListArea from "./../Components/ListArea"
-import History from "./../Components/History"
+import History from "../Components/History/History"
 
 const MainBody = styled.div`
         background-color: #EDF6FF;
