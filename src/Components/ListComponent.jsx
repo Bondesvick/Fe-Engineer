@@ -70,7 +70,7 @@ export default function ListComponent({Name, State, Address, Issues, Enteries, R
                                     padding: "2px 12px", 
                                     display: "inline", 
                                     textAlign: "center",
-                                    marginLeft: "9px"}}>
+                                    marginLeft: "5px"}}>
                             <small style={{fontWeight: "bold", alignSelf: "center"}}>{Issues} Issues found</small>
                         </div>
                         ) : (
@@ -82,7 +82,7 @@ export default function ListComponent({Name, State, Address, Issues, Enteries, R
                                     padding: "2px 12px", 
                                     display: "inline", 
                                     textAlign: "center",
-                                    marginLeft: "9px"}}>
+                                    marginLeft: "5px"}}>
                             <small style={{fontWeight: "bold", alignSelf: "center"}}>No Issues</small>
                         </div>
                         )

@@ -48,7 +48,7 @@ export default function RiskWidget({Risk}) {
             ) : (
                 <HeadItem>
                     <div className="closure">
-                        <FiArrowRight style={{color:"#3C3AB6"}}/>
+                        <FiArrowRight style={{color:"#3C3AB6",  marginLeft: "9px",}}/>
                         <p style={{
                             marginLeft: "9px",
                             color: "#3C3AB6",
