@@ -23,6 +23,7 @@ const Content =  styled.div`
         /* Extra small devices (phones, 600px and down) */
     @media only screen and (max-width: 600px) {
         max-width: 600px;
+        min-height: 1550px;
     }
 
     /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -40,19 +41,19 @@ const Content =  styled.div`
     /* Large devices (laptops/desktops, 992px and up) */
     @media only screen and (min-width: 992px) {
         min-height: 1100px;
-        max-width: 992px;
+        max-width: 1200px;
     }
 
     /* Extra large devices (large laptops and desktops, 1200px and up) */
     @media only screen and (min-width: 1200px) {
-        max-width: 1200px;
+        max-width: 1440px;
         min-height: 1100px;
     }
 
     @media only screen and (min-width: 1440px) {
        
         max-width: 1440px;
-        min-height: 1200px;
+        min-height: 850px;
 
     }
 
@@ -67,17 +68,24 @@ const Content =  styled.div`
 
     .gridarea{
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        ${'' /* grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(5, 1fr);
-        grid-template-rows: auto;
-        height: 90px;
+        grid-template-rows: auto; */}
+        ${'' /* height: 90px; */}
         width: 100%;
         grid-gap: 25px;
         padding: 0 15px 15px 15px;
         padding-bottom: 15px;
 
                 /* Extra small devices (phones, 600px and down) */
-        @media only screen and (max-width: 600px) {}
+        @media only screen and (max-width: 600px) {
+            ${'' /* grid-template-columns: repeat(1fr);
+            grid-template-rows: repeat(13, 1fr);
+            grid-template-rows: auto; */}
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
         /* Small devices (portrait tablets and large phones, 600px and up) */
         @media only screen and (min-width: 600px) {
@@ -136,15 +144,15 @@ export default function Home() {
 
                 <div className="gridarea">
                 
-                    <Stats style={{gridColumnStart: "1", gridColumnEnd: "2", gridRowStart: "1", gridRowEnd: "2"}} num="31454" val="Ongoing metric"/>
+                    <Stats num="31454" val="Ongoing metric"/>
 
-                    <Stats style={{gridColumnStart: "2", gridColumnEnd: "3", gridRowStart: "1", gridRowEnd: "2"}} num="2344" val="Past metric"/>
+                    <Stats num="2344" val="Past metric"/>
 
-                    <Stats style={{gridColumnStart: "3", gridColumnEnd: "4", gridRowStart: "1", gridRowEnd: "2"}} num="14224" val="Missed metric"/>
+                    <Stats num="14224" val="Missed metric"/>
 
-                    <Stats style={{gridColumnStart: "4", gridColumnEnd: "5", gridRowStart: "1", gridRowEnd: "2"}} num="635" val="Failed metric"/>
+                    <Stats num="635" val="Failed metric"/>
 
-                    <Stats style={{gridColumnStart: "5", gridColumnEnd: "6", gridRowStart: "1", gridRowEnd: "2"}} num="11334" val="Pending metric"/>
+                    <Stats num="11334" val="Pending metric"/>
 
                     <Summary />
 

@@ -15,7 +15,12 @@ const Main = styled.div`
     
 
         /* Extra small devices (phones, 600px and down) */
-    @media only screen and (max-width: 600px) {}
+    @media only screen and (max-width: 600px) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 6;
+    }
 
     /* Small devices (portrait tablets and large phones, 600px and up) */
     @media only screen and (min-width: 600px) {

@@ -12,11 +12,17 @@ const Main = styled.div`
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 0 0 6px 6px;
     overflow-y: hidden;
+    height: 550px;
 
     
 
     /* Extra small devices (phones, 600px and down) */
-    @media only screen and (max-width: 600px) {}
+    @media only screen and (max-width: 600px) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 7;
+        grid-row-end: 11;
+    }
 
     /* Small devices (portrait tablets and large phones, 600px and up) */
     @media only screen and (min-width: 600px) {
@@ -68,6 +74,14 @@ const Top = styled.div`
     align-items: center;
     justify-content: stretch;
 
+    .other{
+        flex: 2 2;
+
+        @media only screen and (min-width: 768px) {
+            flex: 2 2;
+        }
+    }
+
 `
 
 const Content = styled.div`
@@ -79,13 +93,6 @@ const Content = styled.div`
 const HeadItem = styled.div`
     flex: 2 2;
 
-    &.other{
-        flex: 1 1;
-
-        @media only screen and (min-width: 768px) {
-            flex: 2 2;
-        }
-    }
 
     .chkbx{
         height: 15px;
