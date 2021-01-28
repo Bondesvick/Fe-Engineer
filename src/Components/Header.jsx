@@ -5,12 +5,51 @@ import { FaSistrix } from "react-icons/fa";
 
 const Main = styled.div`
     background-color: #FFFFFF;
-    width: 1440px;
+    width: 100%;
     border-bottom: #DCE1E7 solid 1px;
-    height: 52px;
+    
     display: flex;
     align-items: center;
     padding-left: 26px;
+
+    @media only screen and (max-width: 600px) {
+        flex-direction: column;
+        min-height: 52px;
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+        /* min-width: 600px; */
+        flex-direction: column;
+        min-height: 52px;
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+        /* min-width: 768x; */
+        flex-direction: column;
+        min-height: 52px;
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+        height: 52px;
+        flex-direction: row;
+        /* min-width: 992px; */
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+        /* min-width: 1200px; */
+        height: 52px;
+        flex-direction: row;
+    }
+
+    @media only screen and (min-width: 1440px) {
+        /* min-width: 1440px; */
+        height: 52px;
+        flex-direction: row;
+    }
 
     .title{
         font-size: 14px;

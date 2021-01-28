@@ -14,6 +14,12 @@ const Main = styled.div`
             justify-content: space-around;
             padding-left: 16px;
 
+            @media only screen and (max-width: 600px) {
+                /* padding-left: 0px; */
+                width: 300px;
+                /* height: 300px; */
+            }
+
             .num{
                 position: absolute;
                 top: 5px;

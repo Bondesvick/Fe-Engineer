@@ -9,6 +9,10 @@ const ListItem = styled.div`
     display: flex;
     align-items: center;
 
+    @media only screen and (min-width: 768px) {
+        height: 60px;
+    }
+
     .chkbx{
         height: 15px;
         width: 15px;
@@ -23,13 +27,20 @@ const HeadItem = styled.div`
         color: #899198;
         font-size: 12px;
     }
+
+    .checkArea{
+        flex: 1 1;
+        @media only screen and (min-width: 768px) {
+            flex: 2 2;
+        }
+    }
 `
 
 
 export default function ListComponent({Name, State, Address, Issues, Enteries, Risk}) {
     return (
         <ListItem>
-                    <HeadItem style={{flex: "1 1"}}>
+                    <HeadItem className="checkArea">
                     <input className="chkbx" type="checkbox"/>
                     <img style={{marginLeft: "15px"}} src="./Images/BlueDown.png" alt="arrow down"/>
                     </HeadItem>
