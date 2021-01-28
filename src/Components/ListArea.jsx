@@ -8,16 +8,55 @@ import {data} from "./Data"
 const Main = styled.div`
     background-color: #fff;
     width: 100%;
-    height: 100%;
+    min-height: 500px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 0 0 6px 6px;
     overflow-y: hidden;
 
-    grid-column-start: 2;
-    grid-column-end: 6;
-    grid-row-start: 2;
-    grid-row-end: 6;
+    
 
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {}
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 7;
+        grid-row-end: 11;
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 8;
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 8;
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 8;
+    }
+
+    @media only screen and (min-width: 1440px) {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 2;
+        grid-row-end: 6;
+
+    }
 
 `
 
@@ -29,13 +68,6 @@ const Top = styled.div`
     align-items: center;
     justify-content: stretch;
 
-    .chkbx{
-        height: 15px;
-        width: 15px;
-        border: 5px solid #9F9F9F;
-        margin-left: 20.5px;
-    }
-
 `
 
 const Content = styled.div`
@@ -46,6 +78,22 @@ const Content = styled.div`
 
 const HeadItem = styled.div`
     flex: 2 2;
+
+    &.other{
+        flex: 1 1;
+
+        @media only screen and (min-width: 768px) {
+            flex: 2 2;
+        }
+    }
+
+    .chkbx{
+        height: 15px;
+        width: 15px;
+        border: 5px solid #9F9F9F;
+        margin-left: 20.5px;
+    }
+
     p{
         color: #899198;
         font-size: 12px;
@@ -57,8 +105,8 @@ export default function ListArea() {
     return (
         <Main>
             <Top>
-                <HeadItem style={{flex: "1 1"}}>
-                <input className="chkbx" type="checkbox"/>
+                <HeadItem className="other">
+                    <input className="chkbx" type="checkbox"/>
                 </HeadItem>
                
                 <HeadItem>
