@@ -74,14 +74,6 @@ const Top = styled.div`
     align-items: center;
     justify-content: stretch;
 
-    .other{
-        flex: 2 2;
-
-        @media only screen and (min-width: 768px) {
-            flex: 2 2;
-        }
-    }
-
 `
 
 const Content = styled.div`
@@ -93,6 +85,14 @@ const Content = styled.div`
 const HeadItem = styled.div`
     flex: 2 2;
 
+    p{
+        color: #899198;
+        font-size: 12px;
+    }
+`
+
+const HeadItemCheck = styled.div`
+    /* flex: 1 1; */
 
     .chkbx{
         height: 15px;
@@ -101,10 +101,20 @@ const HeadItem = styled.div`
         margin-left: 20.5px;
     }
 
-    p{
-        color: #899198;
-        font-size: 12px;
-    }
+    @media only screen and (max-width: 600px) {
+            flex: 2 2;
+        }
+    @media only screen and (min-width: 600px) {
+            flex: 2 2;
+        }
+
+    @media only screen and (min-width: 768px) {
+            flex: 2 2;
+        }
+
+        @media only screen and (min-width: 992px) {
+            flex: 1 1;
+        }
 `
 
 
@@ -112,9 +122,9 @@ export default function ListArea() {
     return (
         <Main>
             <Top>
-                <HeadItem className="other">
+                <HeadItemCheck>
                     <input className="chkbx" type="checkbox"/>
-                </HeadItem>
+                </HeadItemCheck>
                
                 <HeadItem>
                     <p>NAME</p>

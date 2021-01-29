@@ -27,23 +27,42 @@ const HeadItem = styled.div`
         color: #899198;
         font-size: 12px;
     }
+`
 
-    .checkArea{
-        flex: 1 1;
-        @media only screen and (min-width: 768px) {
+const HeadItemCheck = styled.div`
+    /* flex: 1 1; */
+
+    .chkbx{
+        height: 15px;
+        width: 15px;
+        border: 5px solid #9F9F9F;
+        margin-left: 20.5px;
+    }
+
+    @media only screen and (max-width: 600px) {
             flex: 2 2;
         }
-    }
+    @media only screen and (min-width: 600px) {
+            flex: 2 2;
+        }
+
+    @media only screen and (min-width: 768px) {
+            flex: 2 2;
+        }
+
+        @media only screen and (min-width: 992px) {
+            flex: 1 1;
+        }
 `
 
 
 export default function ListComponent({Name, State, Address, Issues, Enteries, Risk}) {
     return (
         <ListItem>
-                    <HeadItem className="checkArea">
+                    <HeadItemCheck>
                     <input className="chkbx" type="checkbox"/>
                     <img style={{marginLeft: "15px"}} src="./Images/BlueDown.png" alt="arrow down"/>
-                    </HeadItem>
+                    </HeadItemCheck>
 
                     <HeadItem>
                         <p style={{
