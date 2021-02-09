@@ -1,4 +1,6 @@
 # [Visit Website](https://fe-dashboard.netlify.app/)
+-----
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b2d85fb1-7991-4903-b79f-3992113ec394/deploy-status)](https://app.netlify.com/sites/fe-dashboard/deploys)
 ----
 ![Screen shot](https://raw.githubusercontent.com/Bondesvick/Fe-Engineer/main/public/Images/fe%20test.png)
 
